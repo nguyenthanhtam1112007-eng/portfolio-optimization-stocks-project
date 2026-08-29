@@ -4,8 +4,9 @@
 Dự án phân tích rủi ro - lợi nhuận và tối ưu hóa danh mục đầu tư bằng mô phỏng Monte Carlo, nghiên cứu trên nhóm cổ phiếu công nghệ lớn của Mỹ (AAPL, MSFT, NVDA).
 
 Cài đặt
-bash
+```python
 pip install yfinance seaborn matplotlib numpy pandas
+```
 ## Cấu trúc file
 * du_an_phan_tich_tai_chinh.py: xử lý và phân tích dữ liệu giai đoạn 2020–2024
 * phan_tich_tai_chinh.py: xử lý và phân tích dữ liệu năm 2025 (bao gồm backtesting)
