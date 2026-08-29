@@ -7,14 +7,17 @@ Cài đặt
 bash
 pip install yfinance seaborn matplotlib numpy pandas
 Cấu trúc file
-du_an_phan_tich_tai_chinh.py: xử lý và phân tích dữ liệu giai đoạn 2020–2024
-phan_tich_tai_chinh.py: xử lý và phân tích dữ liệu năm 2025 (bao gồm backtesting)
+* du_an_phan_tich_tai_chinh.py: xử lý và phân tích dữ liệu giai đoạn 2020–2024
+* phan_tich_tai_chinh.py: xử lý và phân tích dữ liệu năm 2025 (bao gồm backtesting)
+
 Quy trình phân tích
-Thu thập dữ liệu: Lấy giá đóng cửa lịch sử của AAPL, MSFT, NVDA qua yfinance
-Thống kê mô tả: Tính lợi nhuận trung bình, độ biến động (volatility) hàng ngày và theo năm, ma trận tương quan giữa các cổ phiếu
-Phân phối lợi nhuận: Trực quan hóa phân phối lợi nhuận hàng ngày của từng cổ phiếu bằng histogram
-Mô phỏng Monte Carlo: Sinh 10,000 danh mục ngẫu nhiên (trọng số mỗi cổ phiếu trong khoảng 10%–60%), tính lợi nhuận kỳ vọng, rủi ro và Sharpe Ratio cho từng danh mục
-Xác định danh mục tối ưu: Tìm danh mục có Sharpe Ratio cao nhất, rủi ro thấp nhất, và lợi nhuận cao nhất
+
+1. Thu thập dữ liệu: Lấy giá đóng cửa lịch sử của AAPL, MSFT, NVDA qua yfinance
+2. Thống kê mô tả: Tính lợi nhuận trung bình, độ biến động (volatility) hàng ngày và theo năm, ma trận tương quan giữa các cổ phiếu
+3. Phân phối lợi nhuận: Trực quan hóa phân phối lợi nhuận hàng ngày của từng cổ phiếu bằng histogram
+4. Mô phỏng Monte Carlo: Sinh 10,000 danh mục ngẫu nhiên (trọng số mỗi cổ phiếu trong khoảng 10%–60%), tính lợi nhuận kỳ vọng, rủi ro và Sharpe Ratio cho từng danh mục
+5. Xác định danh mục tối ưu: Tìm danh mục có Sharpe Ratio cao nhất, rủi ro thấp nhất, và lợi nhuận cao nhất
+
 Kết quả chính
 
 Danh mục có Sharpe Ratio cao nhất (Max Sharpe Ratio Portfolio):
