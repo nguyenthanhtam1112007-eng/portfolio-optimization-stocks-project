@@ -14,7 +14,7 @@ pip install yfinance seaborn matplotlib numpy pandas
 # Quy trình phân tích
 
 1. Thu thập dữ liệu: Lấy giá đóng cửa lịch sử của AAPL, MSFT, NVDA qua yfinance
-2. Thống kê mô tả: Tính lợi nhuận trung bình, độ biến động (volatility) hàng ngày và theo năm, trực quan hóa phân phối lợi nhuận hàng ngày của từng cổ phiếu bằng histogram.
+2. Thống kê mô tả: Tính lợi nhuận trung bình, độ biến động (volatility) hàng ngày và theo năm, trực quan hóa phân phối lợi nhuận hàng ngày của từng cổ phiếu bằng histogram giai đoạn 2020-2024.
 3. Phân tích tương quan: Lập ma trận tương quan Pearson để thể hiện mối quan hệ giữa các mã cổ phiếu.
 4. Mô phỏng Monte Carlo: Sinh 10,000 danh mục ngẫu nhiên (trọng số ràng buộc cho mỗi cổ phiếu trong khoảng 10%–60%), tính lợi nhuận kỳ vọng, rủi ro và Sharpe Ratio cho từng danh mục.
 5. Xác định danh mục tối ưu: Tìm danh mục có Sharpe Ratio cao nhất, rủi ro thấp nhất, và lợi nhuận cao nhất
